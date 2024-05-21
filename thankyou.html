@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Thankyou Page</title>
     <style>
+        *{
+            margin: 0 ;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
         .thankyou-box{
             display: flex;
             flex-direction: column;
@@ -14,18 +21,49 @@
         }
         h2,h3,.backtohome{
             text-align: center;
+            margin-top: 1rem;
+        }
+        h3{
+            line-height: 30px;
         }
         button{
             padding: 0.9rem 2rem;
             border: none;
             background-color: orangered;
             border-radius: 20px;
+            margin-top: 0.5rem;
         }
         a{
             color: #fff;
             text-decoration: none;
             font-size: 1rem;
-            font-weight: bold;
+            font-weight: 500;
+        }
+
+
+        @media only screen and (max-width:425px){
+            .thankyou-box{
+            width: 90%;
+            margin: 100px auto;
+            word-spacing: 5px;
+        }
+        }
+
+
+        @media only screen and (min-width:426px) and (max-width:768px){
+            .thankyou-box{
+            width: 80%;
+            margin: 100px auto;
+            word-spacing: 3px;
+        }
+        }
+
+        @media only screen and (min-width:769px) and (max-width:1024px){
+            .thankyou-box{
+            width: 70%;
+            margin: 100px auto;
+            word-spacing: 3px;
+        }
         }
     </style>
 </head>
