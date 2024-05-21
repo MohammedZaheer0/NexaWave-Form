@@ -46,6 +46,7 @@
                 <option value="BE">BE</option>
                 <option value="BCA">BCA</option>
                 <option value="MCA">MCA</option>
+                <option value="B.COM">B.COM</option>
                 <option value="B.Sc">B.Sc</option>
                 <option value="MBA Finance">MBA Finance</option>
                 <option value="BBA">BBA</option>
@@ -129,7 +130,7 @@
     </div>
     
    
-    <script>
+    <!-- <script>
         let FormBtn = document.querySelector(".submit");
         FormBtn.addEventListener("click",()=>{
             setTimeout(() => {
@@ -147,9 +148,43 @@
                 alert("Invalid Input");
             }
             }); 
-            },300);
+            },1000);
         })
-        </script>
+        </script> -->
 
+
+
+
+        <script>
+            document.getElementById('registrationForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+    
+                const form = e.target;
+                const formData = new FormData(form);
+                
+                try {
+                    const response = await fetch(form.action, {
+                        method: form.method,
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+    
+                    if (response.ok) {
+                        form.reset();
+                        window.location.assign('/thankyou.html');
+                    } else {
+                        alert('There was a problem submitting the form.');
+                    }
+                } catch (error) {
+                    alert('There was a problem submitting the form.');
+                }
+            });
+    
+            document.getElementById('clearForm').addEventListener('click', function() {
+                document.getElementById('registrationForm').reset();
+            });
+        </script>
 </body>
 </html>
