@@ -1,0 +1,386 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #d6f8f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 40%;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 20px 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+header p, header h4, header ol, header ul {
+    text-align: justify;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    word-spacing: 2px;
+    line-height: 22px;
+}
+
+header h1{
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form select, 
+form input[type="file"]{
+    width: 80%;
+    outline: none;
+    padding: 0.8rem 1rem ;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#qualification{
+    width: 87%;
+}
+
+
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+.radio-container input[type="radio"] {
+    margin-right: 15px; /* Adjust spacing between radio button and label */
+    vertical-align: middle;
+}
+/* Style for labels */
+.radio-container label {
+    font-size: 1rem;
+    margin-bottom: 7px;
+    
+}
+.joinus{
+    line-height: 23px;
+    margin-top: 2rem;
+    word-spacing: 5px;
+    text-align: justify;
+}
+
+#qrcode{
+    height: 50%;
+    width: 50%;
+    display: inline-block;
+    margin: 1rem auto;
+}
+#paymentScreenshot{
+    margin: 0.5rem 0;
+}
+#acknowledge{
+    margin: 0.5rem 0;
+}
+
+form .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem 0 1rem 0;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+form button[type="button"] {
+    background-color: #f44336;
+}
+
+form button[type="button"]:hover {
+    background-color: #e53935;
+}
+
+
+
+
+
+@media only screen and (max-width:425px){
+    .container {
+        width: 80%;
+        padding: 20px 1.5rem;
+    }
+    header p, header h4, header ol, header ul {
+        text-align: justify;
+        margin: 0.5rem auto;
+        margin-bottom: 20px;
+        word-spacing: 2px;
+        line-height: 22px;
+    }
+    
+    header h1{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    p, li, label{
+        font-size: 0.9rem;
+    }
+    form label {
+        margin-top: 10px;
+    }
+    #qualification{
+        width: 91%;
+        font-size: 0.9rem;
+    }
+    form input[type="text"], 
+    form input[type="email"], 
+    form select, 
+    form input[type="file"]{
+        font-size:0.9rem;
+    }
+    .radio-container {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .radio-container input[type="radio"] {
+        margin-right: 15px; /* Adjust spacing between radio button and label */
+        vertical-align: middle;
+    }
+    /* Style for labels */
+    .radio-container label{
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:426px) and (max-width:600px){
+    .container {
+        width: 70%;
+        padding: 20px 1.8rem;
+    }
+    header p, header h4, header ol, header ul {
+        text-align: justify;
+        margin: 0.5rem auto;
+        margin-bottom: 20px;
+        word-spacing: 2px;
+        line-height: 22px;
+    }
+    
+    header h1{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    p, li, label{
+        font-size: 0.9rem;
+    }
+    form label {
+        margin-top: 10px;
+    }
+    #qualification{
+        /* width: 91%; */
+        font-size: 0.9rem;
+    }
+    form input[type="text"], 
+    form input[type="email"], 
+    form select, 
+    form input[type="file"]{
+        font-size:0.9rem;
+    }
+    .radio-container {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .radio-container input[type="radio"] {
+        margin-right: 15px; /* Adjust spacing between radio button and label */
+        vertical-align: middle;
+    }
+    /* Style for labels */
+    .radio-container label{
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width:601px) and (max-width:768px){
+    .container {
+        width: 60%;
+        padding: 20px 2rem;
+    }
+    header p, header h4, header ol, header ul {
+        text-align: justify;
+        margin: 0.5rem auto;
+        margin-bottom: 20px;
+        word-spacing: 2px;
+        line-height: 22px;
+    }
+    
+    header h1{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    p, li, label{
+        font-size: 0.9rem;
+    }
+    form label {
+        margin-top: 10px;
+    }
+    #qualification{
+        /* width: 91%; */
+        font-size: 0.9rem;
+    }
+    form input[type="text"], 
+    form input[type="email"], 
+    form select, 
+    form input[type="file"]{
+        font-size:0.9rem;
+    }
+    .radio-container {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .radio-container input[type="radio"] {
+        margin-right: 15px; /* Adjust spacing between radio button and label */
+        vertical-align: middle;
+    }
+    /* Style for labels */
+    .radio-container label{
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width:769px) and (max-width:900px){
+    .container {
+        width: 50%;
+        padding: 20px 2rem;
+    }
+    header p, header h4, header ol, header ul {
+        text-align: justify;
+        margin: 0.5rem auto;
+        margin-bottom: 20px;
+        word-spacing: 2px;
+        line-height: 22px;
+    }
+    
+    header h1{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    p, li, label{
+        font-size: 0.9rem;
+    }
+    form label {
+        margin-top: 10px;
+    }
+    #qualification{
+        /* width: 91%; */
+        font-size: 0.9rem;
+    }
+    form input[type="text"], 
+    form input[type="email"], 
+    form select, 
+    form input[type="file"]{
+        font-size:0.9rem;
+    }
+    .radio-container {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .radio-container input[type="radio"] {
+        margin-right: 15px; /* Adjust spacing between radio button and label */
+        vertical-align: middle;
+    }
+    /* Style for labels */
+    .radio-container label{
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (min-width:901px) and (max-width:1024px){
+    .container {
+        width: 45%;
+        padding: 20px 2rem;
+    }
+    header p, header h4, header ol, header ul {
+        text-align: justify;
+        margin: 0.5rem auto;
+        margin-bottom: 20px;
+        word-spacing: 2px;
+        line-height: 22px;
+    }
+    
+    header h1{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    p, li, label{
+        font-size: 0.9rem;
+    }
+    form label {
+        margin-top: 10px;
+    }
+    #qualification{
+        /* width: 91%; */
+        font-size: 0.9rem;
+    }
+    form input[type="text"], 
+    form input[type="email"], 
+    form select, 
+    form input[type="file"]{
+        font-size:0.9rem;
+    }
+    .radio-container {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .radio-container input[type="radio"] {
+        margin-right: 15px; /* Adjust spacing between radio button and label */
+        vertical-align: middle;
+    }
+    /* Style for labels */
+    .radio-container label{
+        font-size: 0.9rem;
+    }
+
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaWave Virtual Internship Program</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="logo-color.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>    Wave Virtual Internship Program</h1>
+            <p>Welcome to NexaWave Virtual Internship Program! We are excited to offer a three-month virtual internship opportunity for College students, Graduates and Freshers.</p>
+            <h4>Duration: 3 Month</h4>
+            <ol>
+                <li>Fill out the form below to express your interest in the virtual internship.</li>
+                <li>Upon successful completion of the internship, you will be eligible to receive a certificate from NexaWave.</li>
+            </ol>
+            <h4>How It Works:</h4>
+            <ul>
+                <li>The virtual internship is designed to enhance your skills and provide valuable industry experience.</li>
+                <li>The certificate is a testament to your achievements during the internship period.</li>
+            </ul>
+            <p>Thank you for choosing NexaWave Innovations for your virtual internship journey!</p>
+        </header>
+        
+        <form id="registrationForm" action="https://formspree.io/f/xkndanon" method="POST">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" class="fullName" name="fullName" placeholder="Your answer" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="email" name="email" placeholder="Your answer" required>
+
+            <label for="mobile">Mobile No:</label>
+            <input type="text" id="mobile" class="mobile" name="mobile" placeholder="Your answer" required>
+
+            <label for="qualification">Highest Academic Qualifications:</label>
+            <select id="qualification" class="qualification" name="qualification" required>
+                <option value="">Select</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="BE">BE</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+                <option value="B.Sc">B.Sc</option>
+                <option value="MBA Finance">MBA Finance</option>
+                <option value="BBA">BBA</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label><h4>Where did you learn about us?</h4></label>
+            <div class="radio-container">
+                <input type="radio" id="socialMedia" name="source" value="Social Media" required>
+                <label for="socialMedia">Social Media</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="referral" name="source" value="Referral">
+                <label for="referral">Referral</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="otherSource" name="source" value="Other">
+                <label for="otherSource">Other</label>
+            </div>
+        
+
+            <label><h4>Internship Domain:</h4></label>
+            <div class="radio-container">
+                <input type="radio" id="webDevelopment" name="domain" value="Web Development" required>
+                <label for="webDevelopment">Web Development</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="appDevelopment" name="domain" value="App Development">
+                <label for="appDevelopment">App Development</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="pythonDevelopment" name="domain" value="Python Development">
+                <label for="pythonDevelopment">Python Development</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="javaDevelopment" name="domain" value="Java Development">
+                <label for="javaDevelopment">Java Development</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="dataScience" name="domain" value="Data Science">
+                <label for="dataScience">Data Science</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="machineLearning" name="domain" value="Machine Learning">
+                <label for="machineLearning">Machine Learning</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="graphicDesign" name="domain" value="Graphic Design">
+                <label for="graphicDesign">Graphic Design</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="mbaFinance" name="domain" value="MBA Finance">
+                <label for="mbaFinance">MBA Finance</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="cyberSecurity" name="domain" value="Cyber Security">
+                <label for="cyberSecurity">Cyber Security</label>
+            </div>
+            
+
+            <p class="joinus">Join us in giving back to the community! Our internship program requests a modest fee only <span style="font-weight: bold;">Rs 50/-</span>. Your contribution fuels our mission and supports community growth. Thank you for your generosity and commitment to making a difference!
+            You will get to know about your selection within 1 week.</p>
+
+            <p>UPI payments accepted here:</p>
+            <img src="qrcode.jpeg" id="qrcode" alt="UPI Payment Link" >
+
+            <label for="paymentScreenshot">Screenshot of Payment (Contribution):</label>
+            <p>Once Submitted, it cannot be updated later. (Non Refundable)</p>
+            <input type="file" id="paymentScreenshot"  required>
+
+            <label for="acknowledge">
+                <input type="radio" id="acknowledge" name="acknowledge" value="yes" required>
+                I have understood the internship details and hereby I acknowledge and accept terms and conditions
+            </label>
+
+            <div class="buttons">
+                <button type="submit" id="submitform" class="submit">Submit</button>
+                <button type="button" id="clearForm">Clear</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="index.js"></script>
+   
+    <script>
+        let FormBtn = document.querySelector(".submit");
+        FormBtn.addEventListener("click",()=>{
+            setTimeout(() => {
+            let Inputs = document.querySelectorAll(".fullName,.email,.mobile");
+            Inputs.forEach(input =>{
+                input.value = "";
+            let FullName = document.querySelector(".fullName").value;
+            let Email = document.querySelector(".email").value;
+            let Mobile = document.querySelector(".mobile").value;
+    
+            if(FullName == FullName && Email == Email && Mobile == Mobile){
+                window.location.assign("/thankyou.html");
+            }
+            else{
+                alert("Invalid Input");
+            }
+            }); 
+            },300);
+        })
+        </script>
+
+</body>
+</html>
