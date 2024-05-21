@@ -28,7 +28,7 @@
             <p>Thank you for choosing NexaWave Innovations for your virtual internship journey!</p>
         </header>
         
-        <form id="registrationForm" action="https://formspree.io/f/xkndanon" method="POST">
+        <form id="registrationForm" accept-charset="utf-8"  action="https://formspree.io/f/xkndanon" method="POST" enctype="multipart/form-data">
             <label for="fullName">Full Name:</label>
             <input type="text" id="fullName" class="fullName" name="fullName" placeholder="Your answer" required>
 
@@ -115,7 +115,7 @@
 
             <label for="paymentScreenshot">Screenshot of Payment (Contribution):</label>
             <p>Once Submitted, it cannot be updated later. (Non Refundable)</p>
-            <input type="file" id="paymentScreenshot"  required>
+            <input type="file" id="paymentScreenshot"  accept="image/*" required>
 
             <label for="acknowledge">
                 <input type="radio" id="acknowledge" name="acknowledge" value="yes" required>
@@ -130,30 +130,6 @@
     </div>
     
    
-    <!-- <script>
-        let FormBtn = document.querySelector(".submit");
-        FormBtn.addEventListener("click",()=>{
-            setTimeout(() => {
-            let Inputs = document.querySelectorAll(".fullName,.email,.mobile");
-            Inputs.forEach(input =>{
-                input.value = "";
-            let FullName = document.querySelector(".fullName").value;
-            let Email = document.querySelector(".email").value;
-            let Mobile = document.querySelector(".mobile").value;
-    
-            if(FullName == FullName && Email == Email && Mobile == Mobile){
-                window.location.assign("/thankyou.html");
-            }
-            else{
-                alert("Invalid Input");
-            }
-            }); 
-            },1000);
-        })
-        </script> -->
-
-
-
 
         <script>
             document.getElementById('registrationForm').addEventListener('submit', async function(e) {
@@ -186,5 +162,9 @@
                 document.getElementById('registrationForm').reset();
             });
         </script>
+
+
 </body>
 </html>
+
+
