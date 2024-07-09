@@ -83,6 +83,10 @@ form input[type="file"]{
     display: inline-block;
     margin: 1rem auto;
 }
+.upipayment{
+    font-size: 20px;
+    font-weight: 600;
+}
 #paymentScreenshot{
     margin: 0.5rem 0;
 }
